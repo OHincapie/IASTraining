@@ -12,7 +12,7 @@ public class CategoryAvailableTest {
     @DisplayName("Null category availability should throw an error")
     void null_category_availability() {
         // AAA - arrange act assert
-        Boolean invalidAvailable = null;
+        Integer invalidAvailable = null;
 
         assertThrows(NullPointerException.class, () -> {
             new AvailableCategory(invalidAvailable);

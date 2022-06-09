@@ -25,16 +25,6 @@ public class test {
             System.out.println(e.getMessage());
         }
 
-        try {
-            Category category = new Category(
-                    new CategoryId(1L),
-                    new CategoryName("Tech"),
-                    new QuantityProducts(60),
-                    new AvailableCategory(true)
-            );
-            System.out.println(category.toString());
-        } catch (NullPointerException | IllegalArgumentException e) {
-            System.out.println(e.getMessage());
-        }
+
     }
 }
